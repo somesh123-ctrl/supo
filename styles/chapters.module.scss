@@ -1,0 +1,116 @@
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  overflow:hidden;
+  padding-top: 5%;
+  animation: slideIn 1.5s ease-in-out forwards;
+  height: 550px;
+  .card {
+    background-color: rgb(212, 84, 84);
+    background-color: rgb(122, 194, 144);
+    border-radius: 10%;
+    -webkit-tap-highlight-color: transparent;
+    transform: scale(0.98);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+width: 310px;
+height: 400px;
+    cursor: pointer;
+    .img {
+      width: 310px;
+      height: 210px;
+      border-radius: 10%;
+    }
+    
+   
+    .title{
+      font-size: 20px;
+      color: brown;
+    padding-left: 35%;}
+      .text{
+        font-size: large;
+        color: brown;
+        padding-left: 27%;}
+    
+    .button{
+        padding: 10px;
+        text-align: center;
+        background-color: #a39175; /* Green */
+    width: 70px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px ;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+        font-stretch: expanded;
+        border-radius: 50%;
+        border-style: inset;
+        border-color: rgb(238, 138, 8);}
+    
+    
+    .btn{
+padding-left: 36%;    
+
+
+    }
+
+}  
+}
+
+
+  
+.card:after {
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.14);
+  box-shadow: 0 0 37px #76ec32;
+  
+.button:hover{
+  background-color: #241a0d;
+  color: aliceblue;
+}
+
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 54px) {
+  .card {
+      .img{
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+  }
+
+
+  @media only screen and (max-width: 970px) {
+    .container {
+height: max-content;    }
+  
+  }
